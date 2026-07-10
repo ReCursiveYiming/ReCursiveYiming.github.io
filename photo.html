@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photos</title>
+  <style>
+    body {
+      margin: 18px 0 40px 22px;
+      max-width: 820px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 16px;
+      line-height: 1.48;
+      color: #111;
+      background: #fffdf5;
+    }
+
+    a {
+      color: rgb(96, 159, 227);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: 28px;
+      font-weight: normal;
+      line-height: 1.1;
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+      max-width: 720px;
+    }
+
+    .photo-column {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid #bbb;
+    }
+
+    figcaption {
+      margin-top: 7px;
+      color: #333;
+      font-size: 15px;
+    }
+
+    .back-link {
+      color: #555;
+    }
+
+    @media (max-width: 620px) {
+      body {
+        margin-left: 14px;
+        margin-right: 14px;
+      }
+
+      .photo-grid {
+        grid-template-columns: 1fr;
+        max-width: 360px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Some Photos (ordered casually)</h1>
+
+  <div class="photo-grid">
+    <div class="photo-column">
+      <figure>
+        <img src="photos/afterrain.jpeg" alt="After rain">
+        <figcaption>A spring twilight in College Station, TX, after the rain.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="photos/cherry.jpeg" alt="Cherry">
+        <figcaption>Cherry blossoms in Burnaby, BC, though this view looks very japanese.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="photos/sunset.jpeg" alt="Sunset">
+        <figcaption>Sunset in Tucson, AZ. Two hours after this photo was taken, we were secretly chased by 
+          a group of coyotes in the dark...
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="photos/withhelene.jpeg" alt="With Helene">
+        <figcaption>Meeting <a href="https://helenegrimaud.com/">Hélène Grimaud</a>
+          backstage in Newport, RI. I had completely lost control of my facial expression...
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="photos/morning.jpeg" alt="Morning">
+        <figcaption>This view reminds me of <cite>"I Went This Morning over the Field" </cite> ... by Gustav Mahler
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="photos/shadow.jpeg" alt="Shadow">
+        <figcaption>Some warm, tranquil memory...
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="photo-column">
+      <figure>
+        <img src="photos/cardgame.jpeg" alt="Card game">
+        <figcaption>An insane game (<a href="https://boardgamegeek.com/boardgame/760/battle-line">Battle Line</a>) 
+          with my friend <a href="https://sites.google.com/view/liziyang/home">Ziyang</a>. I lost. :)</figcaption>
+      </figure>
+
+      <figure>
+        <img src="photos/eat.jpeg" alt="Eating">
+        <figcaption>Eating chicken wings... (photo credit: Komo)</figcaption>
+      </figure>
+
+      <figure>
+        <img src="photos/suzhouu.jpeg" alt="Suzhou">
+        <figcaption>Soochow University, where I was fortunate to attend the 
+          <a href="https://people.math.wisc.edu/~lmaxim/Suzhou23.html">Suzhou workshop on Matroid Theory</a> 
+          in 2024. Interestingly, in the first two talks, the word 'matroid' didn't even appear...
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="photos/reservoir.jpeg" alt="Reservoir">
+        <figcaption>Somewhere on earth...
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="photos/painting1.jpeg" alt="Painting1">
+        <figcaption>A naive painting of mine...
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="photos/painting2.jpeg" alt="Painting2">
+        <figcaption>Another naive painting...
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="photos/tree.jpeg" alt="Tree">
+        <figcaption>Trees!...
+        </figcaption>
+      </figure>
+    </div>
+
+  </div>
+
+  <p>
+    <a class="back-link" href="index.html">Back to home</a>
+  </p>
+
+</body>
+</html>

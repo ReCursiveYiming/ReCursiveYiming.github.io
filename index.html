@@ -1,25 +1,22 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Yiming</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yiming Li</title>
   <style>
     body {
-      max-width: 760px;
-      margin: 40px auto;
+      margin: 18px 0 40px 22px;
+      max-width: 820px;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 17px;
-      line-height: 1.6;
+      font-size: 16px;
+      line-height: 1.48;
       color: #111;
-      background: #fff;
-    }
-
-    h1, h2 {
-      font-weight: normal;
+      background: #edf7ff;
     }
 
     a {
-      color: #0645ad;
+      color: rgb(96, 159, 227);
       text-decoration: none;
     }
 
@@ -27,67 +24,191 @@
       text-decoration: underline;
     }
 
+    h1 {
+      margin: 0 0 14px;
+      font-size: 28px;
+      font-weight: normal;
+      line-height: 1.1;
+    }
+
+    h2 {
+      margin: 28px 0 8px;
+      font-size: 21px;
+      font-weight: normal;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ul, ol {
+      margin-top: 6px;
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    .top {
+      display: flex;
+      align-items: flex-start;
+      gap: 22px;
+      margin-bottom: 22px;
+    }
+
+    .portrait {
+      width: 170px;
+      height: 170px;
+      object-fit: cover;
+      object-position: 28% 45%;
+      border: 1px solid #bbb;
+      cursor: pointer;
+    }
+
+    .portrait:focus {
+      outline: 2px solid rgb(96, 159, 227);
+      outline-offset: 3px;
+    }
+
+    .contact {
+      padding-top: 2px;
+    }
+
     .nav {
-      margin-bottom: 30px;
+      margin: 14px 0 0;
     }
 
     .nav a {
       margin-right: 15px;
+      white-space: nowrap;
     }
 
-    hr {
-      border: none;
-      border-top: 1px solid #ccc;
-      margin: 30px 0;
+    .updated {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    @media (max-width: 620px) {
+      body {
+        margin-left: 14px;
+        margin-right: 14px;
+      }
+
+      .top {
+        display: block;
+      }
+
+      .portrait {
+        width: 145px;
+        height: 145px;
+        margin-bottom: 14px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>Yiming</h1>
+  <div class="top">
+    <img class="portrait" id="portrait" src="files/piano.png" alt="Yiming Li" title="Click to see another photo of me" tabindex="0">
 
-  <div class="nav">
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#notes">Notes</a>
-    <a href="#contact">Contact</a>
+    <div class="contact">
+      <h1>Yiming Li</h1>
+
+      <p>
+        yla877@sfu.ca<br>
+        Shrum Science Building P8495 · Simon Fraser University · 8888 University Drive · Burnaby · BC · V5A 1S6 · Canada 
+      </p>
+
+      <div class="nav">
+        <a href="#acknowledgement">Acknowledgement</a>
+        <a href="#papers">Research Papers</a>
+        <a href="#notes">Other Writings</a>
+        <a href="#music">Music</a>
+        <a href="#misc">Misc</a>
+      </div>
+    </div>
   </div>
 
   <p>
-    I am interested in mathematics, computer science, and related topics.
+    I am currently an M.Sc. student in mathematics at Simon Fraser University, where I am fortunate to be supervised by Professor 
+    <a href="https://www.sfu.ca/~mdevos/">Matt DeVos</a>. Before this, I received a B.E. from Beijing Jiaotong University
+    and an M.S. from Texas A&M University, both in computer science.<br><br>
+
+    I am interested in algebraic and discrete structures in general. In particular, I am fascinated by understanding
+    how algebraic language can be applied to interpret phenomena in combinatorics.
+    I will be applying to Ph.D. positions this fall, 
+    specializing in combinatorial algebraic geometry and algebraic combinatorics. <br><br>
+
+    Things I am (and/or will be) eagerly learning: commutative algebra, algebraic geometry, 
+    algebraic topology, geometry of matroids, tropical geometry, etc. <br>
+
   </p>
 
-  <hr>
-
-  <h2 id="about">About</h2>
+  <h2 id="acknowledgement">Acknowledgement</h2>
   <p>
-    I am .......
+    See <a href="acknowledgement.html">here</a>.
   </p>
 
-  <h2 id="research">Research / Projects</h2>
+  <h2 id="papers">Research Papers</h2>
   <ul>
-    <li><a href="#">paper...</a></li>
-    <!-- <li><a href="#">项目二：标题</a></li>
-    <li><a href="#">论文或笔记标题</a></li> -->
+    <li>To appear soon....</li>
   </ul>
 
-  <h2 id="notes">Notes</h2>
+  <h2 id="notes">Other Writings</h2>
   <ul>
-    <li><a href="#">Linear Algebra Notes</a></li>
-    <li><a href="#">Probability Notes</a></li>
-    <li><a href="#">Reading List</a></li>
+    <li><a href="files/CAT.pdf">Notes</a> in Category Theory</li>
+    <li>Notes and solutions to exercises in the classic book 
+    <cite>Introduction to Commutative Algebra</cite> by Atiyah and MacDonald: <a href="files/AM1-3.pdf"> Chapter 1-3 </a>. 
+    More to appear...</li>
+    <li><a href="files/MatU-I.pdf">Notes</a> on matroid union and intersection</li>
+    <li><a href="files/RadoMatroid.pdf">Notes</a> in Rado theory for matroids</li>
+    <li>A bit <a href="files/Baire Space.pdf">Notes</a> in Functional Analysis</li>
   </ul>
 
-  <h2 id="contact">Contact</h2>
+  <h2 id="music">Music</h2>
   <p>
-    Email: yourname@example.com<br>
+    I am a Brahmsian and therefore a defender of <a href="https://en.wikipedia.org/wiki/Absolute_music">absolute music</a> in general, 
+    but/and I also appreciate most composers from the 18th and 19th centuries you may name, especially Bach, Mozart, and Chopin.
+    Here are two recordings of Brahms's works that I played:
+  </p>
+  <ul>
+    <li><a href="files/117.1.m4a">Op. 117 No. 1</a></li>
+    <li><a href="files/118.2.m4a">Op. 118 No. 2</a></li>
+  </ul>
+
+  <h2 id="misc">Misc</h2>
+  <ul>
+    <li>Some photos: See <a href="photo.html">here</a>.</li>
+    <li>I support <a href="https://en.wikipedia.org/wiki/FC_Barcelona">FC Barcelona</a> and I am a big fan of the japanese songwriter and singer 
+      <a href="https://en.wikipedia.org/wiki/Izumi_Sakai">Sakai Izumi</a>.</li>
+  </ul>
+  
+
+
+  <p class="updated">
+    Last updated: 2026-06-17
   </p>
 
-  <hr>
+  <script>
+    const portrait = document.getElementById("portrait");
+    const portraitPhotos = ["files/piano.png", "files/me1.jpeg"];
+    let portraitIndex = 0;
 
-  <p>
-    Last updated: 2026-06-16
-  </p>
+    function switchPortrait() {
+      portraitIndex = (portraitIndex + 1) % portraitPhotos.length;
+      portrait.src = portraitPhotos[portraitIndex];
+    }
+
+    portrait.addEventListener("click", switchPortrait);
+    portrait.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        switchPortrait();
+      }
+    });
+  </script>
 
 </body>
 </html>
